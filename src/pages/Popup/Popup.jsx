@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from '../../assets/img/logo.svg';
-import Greetings from '../../containers/Greetings/Greetings';
+import React, { useState } from 'react';
 import './Popup.css';
 
 const Popup = () => {
+  const [countDownMinutes, setCountDownMinutes] = useState(0)
+  const [countDownSeconds, setCountDownSeconds] = useState(0)
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/pages/Popup/Popup.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React!
-        </a>
+        
+        Min: <input type='number' value={ countDownMinutes} onChange={ v => setCountDownMinutes(v.target.value) } />
+        Sec: <input type='number' value={ countDownSeconds} onChange={ v => setCountDownSeconds(v.target.value) } />
+        <button onClick={() => {
+          chrome.alarms.create('testAlarm', {
+            when: Date.now() + (Number(countDownSeconds) * 1000) + (Number(countDownMinutes) * 60 * 1000)
+          });
+          setCountDownSeconds(0)
+          setCountDownMinutes(0)
+        }}>Click me!</button>
+
       </header>
     </div>
   );
