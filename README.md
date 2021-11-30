@@ -1,3 +1,25 @@
+# What is this extension for?
+
+This is just my playground to experiment with how broad can you take extensions in chrome 
+and how could they be used to crack games, or other pages that I want to change their behaviour
+
+Enhanced sites
+
+Feature list for Ogamex (in random order of importance and execution):
+- [x] Add calculations for when the resource silos will be full on the empire screen
+- [x] Add the ability to schedule countdowns on the page on the extension popup screen
+- [ ] Add a way to configure the features you want enabled or not on the page through the popup page
+- [ ] Add a button to the spy screen to attack the spied planet with your predefined plunder fleet
+- [ ] Add the hability to filter or highlight spy reports based on the resources or defenses
+- [ ] Add calculations for calculating the profitability and break even on the mine cost
+- [ ] Add an alarm for when you are under attack
+- [ ] Add the ability to auto refresh the page (without being obvious and banned)
+- [ ] Show all the points lost or won by the players in the stats without having to hover
+- [ ] Send a notification when you are under attack to discord/telegram/mail...
+- [ ] Make the list of planets smaller for easier clicking
+
+
+
 <img src="src/assets/img/icon-128.png" width="64"/>
 
 # Chrome Extension Boilerplate with React 17 and Webpack 5
