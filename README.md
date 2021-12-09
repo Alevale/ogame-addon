@@ -8,7 +8,8 @@ Enhanced sites
 Feature list for Ogamex (in random order of importance and execution):
 - [x] Add calculations for when the resource silos will be full on the empire screen
 - [x] Add the ability to schedule countdowns on the page on the extension popup screen
-- [ ] Add a way to configure the features you want enabled or not on the page through the popup page
+- [x] Add a way to configure the features you want enabled or not on the page through the popup page
+- [x] Add a way to show a list of asteroids and show them in the popup extension
 - [ ] Add a button to the spy screen to attack the spied planet with your predefined plunder fleet
 - [ ] Add the hability to filter or highlight spy reports based on the resources or defenses
 - [ ] Add calculations for calculating the profitability and break even on the mine cost
